@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecciona un Sombrero</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url("/fondo.jpg");
+            background-size: cover;
+            background-position: top;
+            color: white;
+        }
+        .galeria {
+            display: flex;
+            width: 75%;
+            margin: auto;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        .sombrero {
+            opacity: 0.7;
+            margin: 5px;
+        }
+        .sombrero:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎩 Abracadabra 🎩</h1>
+    <div class="galeria">
+        <a href="/abracadabra/conejo/1"><img src="/sombrero.png" class="sombrero" alt="Sombrero 1"></a>
+        <a href="/abracadabra/conejo/2"><img src="/sombrero.png" class="sombrero" alt="Sombrero 2"></a>
+        <a href="/abracadabra/conejo/3"><img src="/sombrero.png" class="sombrero" alt="Sombrero 3"></a>
+        <a href="/abracadabra/conejo/4"><img src="/sombrero.png" class="sombrero" alt="Sombrero 4"></a>
+    </div>
+</body>
+</html>

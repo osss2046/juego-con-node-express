@@ -17,11 +17,12 @@ app.get('/abracadabra/usuarios', (req, res) => {
 app.use('/abracadabra/juego/:usuario', (req, res, next) => {
     const { usuario } = req.params;
     if (usuarios.includes(usuario)) {
-        next();
+        res.redirect(`/selector.html?usuario=${usuario}`);
     } else {
         res.status(404).sendFile(__dirname + '/assets/who.jpeg');
     }
 });
+
 
 // Esta ruta se debería definir después de middleware de usuario para una correcta función
 app.get('/abracadabra/juego/:usuario', (req, res) => {
